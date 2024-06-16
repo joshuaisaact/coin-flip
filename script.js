@@ -11,7 +11,7 @@ $(document).ready(() => {
 
     $('#tails').on('click', () => {
         if (result === 'tails') {
-            $('#result').text(`Congratulations, you won!, the result was ${result}`)
+            $('#result').text(`Congratulations, you won! The result was ${result}`)
             $('#flipCoin, #result').show();
             $('#flipped, #heads, #tails').hide();
         } else {
@@ -23,7 +23,7 @@ $(document).ready(() => {
 
     $('#heads').on('click', () => {
         if (result === 'heads') {
-            $('#result').text(`Congratulations, you won!, the result was ${result}`)
+            $('#result').text(`Congratulations, you won! The result was ${result}`)
             $('#flipCoin, #result').show();
             $('#flipped, #heads, #tails').hide();
         } else {
