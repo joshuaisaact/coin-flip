@@ -1,4 +1,10 @@
 $(document).ready(() => {
+
+    function scrollBackground() {
+        $('.background').css({ left: '0%' }).animate({ left: '-100%' }, 20000, 'linear', scrollBackground);
+    }
+
+    scrollBackground();
     
     let result
 
