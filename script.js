@@ -6,7 +6,9 @@ $(document).ready(() => {
 
     scrollBackground();
     
-    let result
+    let wins = 0;
+    let losses = 0;
+    let result;
 
     $('#flipCoin').on('click', () => {
         result = Math.random() < 0.5 ? 'heads' : 'tails';
@@ -18,24 +20,30 @@ $(document).ready(() => {
     $('#tails').on('click', () => {
         if (result === 'tails') {
             $('#result').text(`Congratulations, you won! The result was ${result}.`)
-            $('#flipCoin, #result').show();
-            $('#flipped, #heads, #tails').hide();
+            wins++;
         } else {
             $('#result').text(`Sorry, you lost! The result was ${result}.`)
-            $('#flipCoin, #result').show();
-            $('#flipped, #heads, #tails').hide();
+            losses++;
         }
+        updateTally();
+        $('#flipCoin, #result').show();
+        $('#flipped, #heads, #tails').hide();
     })
 
     $('#heads').on('click', () => {
         if (result === 'heads') {
             $('#result').text(`Congratulations, you won! The result was ${result}.`)
-            $('#flipCoin, #result').show();
-            $('#flipped, #heads, #tails').hide();
+            wins++;
         } else {
             $('#result').text(`Sorry, you lost! The result was ${result}.`)
-            $('#flipCoin, #result').show();
-            $('#flipped, #heads, #tails').hide();
+            losses++;
         }
-    })
+        updateTally();
+        $('#flipCoin, #result').show();
+        $('#flipped, #heads, #tails').hide();
+    });
+
+    function updateTally() {
+        $('#tally').text(`Wins: ${wins} | Losses: ${losses}`)
+    }
 });
