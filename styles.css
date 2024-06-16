@@ -50,6 +50,9 @@ body {
     font-size: 24px;
     padding: 30px;
     font-weight: bold;
+    border: 2px solid #ffffff;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
   }
 
   #heads, #tails {
@@ -61,6 +64,9 @@ body {
     display: none;
     align-items: center;
     justify-content: center;
+    border: 2px solid #ffffff;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
   }
 
   .button-container {
