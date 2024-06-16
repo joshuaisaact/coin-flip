@@ -6,7 +6,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #000000;
-    color: white;
+    color: rgb(255, 255, 255);
   }
 
   img {
@@ -31,7 +31,13 @@ body {
     justify-content: center;
   }
 
+  #flipCoin {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+  }
+
   #heads, #tails {
+    font-family: 'Courier New', Courier, monospace;
     margin-top: 20px;
     display: none;
     align-items: center;
