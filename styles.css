@@ -35,7 +35,7 @@ body {
     text-align: center;
   }
   
-  #result #flipped {
+  #result, #flipped {
     margin-top: 30px;
     font-size: 24px;
     font-weight: bold;
@@ -47,6 +47,7 @@ body {
   #flipCoin {
     font-family: 'Courier New', Courier, monospace;
     margin-top: 20px;
+    font-size: 24px;
     padding: 30px;
     font-weight: bold;
   }
@@ -55,6 +56,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     margin-top: 20px;
     padding: 30px;
+    font-size: 24px;
     font-weight: bold;
     display: none;
     align-items: center;
