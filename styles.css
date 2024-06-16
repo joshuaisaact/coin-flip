@@ -47,11 +47,15 @@ body {
   #flipCoin {
     font-family: 'Courier New', Courier, monospace;
     margin-top: 20px;
+    padding: 30px;
+    font-weight: bold;
   }
 
   #heads, #tails {
     font-family: 'Courier New', Courier, monospace;
     margin-top: 20px;
+    padding: 30px;
+    font-weight: bold;
     display: none;
     align-items: center;
     justify-content: center;
