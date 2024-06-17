@@ -1,14 +1,20 @@
 $(document).ready(() => {
 
+    let wins = 0;
+    let losses = 0;
+    let result;
+
+    function updateTally() {
+        $('#tally').text(`Wins: ${wins} | Losses: ${losses}`)
+    }
+
     function scrollBackground() {
         $('.background').css({ left: '0%' }).animate({ left: '-100%' }, 20000, 'linear', scrollBackground);
     }
 
     scrollBackground();
     
-    let wins = 0;
-    let losses = 0;
-    let result;
+    
 
     $('#flipCoin').on('click', () => {
         result = Math.random() < 0.5 ? 'heads' : 'tails';
@@ -43,7 +49,4 @@ $(document).ready(() => {
         $('#flipped, #heads, #tails').hide();
     });
 
-    function updateTally() {
-        $('#tally').text(`Wins: ${wins} | Losses: ${losses}`)
-    }
 });
