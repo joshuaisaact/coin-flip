@@ -1,5 +1,13 @@
+@font-face {
+    font-family: 'Pixelify';
+    src: url('./resources/PixelifySans-VariableFont_wght.ttf') format('truetype'),
+         url('./resources/PixelifySans-Regular.ttf') format('truetype');
+    
+}
+
+
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Pixelify', 'Courier New', Courier, monospace;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,6 +16,11 @@ body {
     background-color: #000000;
     color: rgb(255, 255, 255);
   }
+
+h1 {
+    font-weight: lighter;
+    font-size: 45px;
+}
 
   .background {
     position: fixed;
@@ -38,29 +51,26 @@ body {
   #result, #flipped, #tally {
     margin-top: 30px;
     font-size: 24px;
-    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   #flipCoin {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Pixelify', 'Courier New', Courier, monospace;
     margin-top: 20px;
     font-size: 24px;
     padding: 30px;
-    font-weight: bold;
     border: 2px solid #ffffff;
     background-color: #000000;
     color: rgb(255, 255, 255);
   }
 
   #heads, #tails {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Pixelify','Courier New', Courier, monospace;
     margin-top: 20px;
     padding: 30px;
     font-size: 24px;
-    font-weight: bold;
     display: none;
     align-items: center;
     justify-content: center;
