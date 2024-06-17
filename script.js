@@ -14,10 +14,10 @@ $(document).ready(() => {
 
     function coinFlip(choice) {
         if (result === choice) {
-            $('#result').text(`Congratulations, you won! The result was ${result}.`)
+            $('#result').html(`The result was ${result}. <br><br> Congratulations, you won!`)
             wins++;
         } else {
-            $('#result').text(`Sorry, you lost! The result was ${result}.`)
+            $('#result').html(`The result was ${result}. <br><br> Sorry, you lost!`)
             losses++;
         }
         updateTally();
